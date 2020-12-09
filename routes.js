@@ -1,12 +1,12 @@
 //var express = require("express");
 var request = require('request');
 const routes = require('express').Router();
-var { HOST,LONGHOST } = require('./configure');
+var { HOST } = require('./configure');
 const axios = require('axios')
 const fetch = require('node-fetch');
 
 var base = HOST;
-var longbase = LONGHOST ;
+//var longbase = LONGHOST ;
 var headers = {'Content-Type': 'application/json'} ;
 
 routes.post('/get',function(req,res){
